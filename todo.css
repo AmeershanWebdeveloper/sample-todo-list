@@ -1,0 +1,111 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 50px 00px;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 251, 250);
+  display: grid;
+  place-content: center;
+}
+.main_container {
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.253);
+  border: solid 0.3px rgba(0, 0, 0, 0.082);
+  border-radius: 15px;
+  padding: 10px;
+}
+.add_input_box {
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+}
+#todolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+input[type="text"] {
+  border-radius: 15px;
+  width: 100%;
+  padding: 12px 20px;
+  outline: none;
+  outline-offset: 0px;
+  border: solid 0.5px rgba(0, 0, 0, 0.219);
+  transition: all 1s ease-in-out;
+}
+input[type="text"]:focus {
+  border: solid 1px orange;
+}
+#addButton {
+  background-color: rgb(255, 217, 0);
+  border: 3px solid rgb(255, 234, 195);
+  padding: 10px 30px;
+  color: rgba(0, 0, 0, 0.815);
+  font-weight: 800;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.added_list {
+  margin-top: 20px;
+  border-top: 5px solid rgb(243, 211, 152);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.added_list ul {
+  list-style: none;
+  width: 100%;
+}
+.added_list ul .newItem {
+  padding: 20px 0px;
+  border-bottom: solid 0.5px rgb(251, 227, 180);
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+  outline-offset: 0px;
+  transition: all 1s ease-in;
+  animation: mymove 0.5s ease-in;
+}
+.delteteButton {
+  background-color: rgb(248, 74, 74);
+  color: white;
+  padding: 4px 9px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.mark {
+  transform: rotate(50deg);
+}
+
+.mark {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  transform: rotate(45deg);
+}
+.leave {
+  transform: translateY(4rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+@keyframes mymove {
+  from {
+    opacity: -1;
+  }
+  to {
+    opacity: 1;
+  }
+}
